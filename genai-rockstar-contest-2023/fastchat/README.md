@@ -1,14 +1,14 @@
 # Generate Song Lyrics
 
-For this portion of the activity we will be using one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
+We will be using one of Intel's Optimized Cloud Recipes. If you want to experiment with this on your own, you can find the recipe [here](https://github.com/intel/optimized-cloud-recipes/tree/main/recipes/ai-fastchat-amx-ubuntu).
 
-This recipe pre-installed and configured [Fastchat](https://github.com/lm-sys/FastChat) on the VMs that have been provisioned. The [Intel Extension for Pytorch](https://github.com/intel/intel-extension-for-pytorch) has been deployed, along with a few other components, for full details, refer to the recipe.
+This recipe is included in the Terraform module.  This installs and configures [Fastchat](https://github.com/lm-sys/FastChat) on the VM created in your AWS account. The [Intel Extension for Pytorch](https://github.com/intel/intel-extension-for-pytorch) also deploys onto the VM, along with a few other components, for full details, refer to the recipe.
 
-Intel AMX has been enabled by default for this activity.
+Intel AMX has been enabled by default.
 
 ## Instructions
 
-You should recieve information about how to login to your assigned VM via the email address that you used to register. If not, please check with the on-site staff.
+You will run the Terraform Module [XXXXXXXXX] 
 
 - Login to the VM using the provided credentials
 - Run the following command to start FastChat
@@ -68,6 +68,4 @@ The Force is strong, with our Jedi warriors
 
 ![Lyrics Console Example](images/lyrics-console-example.png)
 
-## Continue to Album Cover instructions
 
-**[Album Cover Instructions](../stable-diffusion/README.md)**
