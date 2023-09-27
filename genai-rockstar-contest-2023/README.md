@@ -1,4 +1,4 @@
-# Intel Generative AI Rockstar Challenge
+# Intel Generative AI Rockstar Contest
 
 ![Generative AI Rockstar](images/ai-rockstar.png)
 
@@ -37,6 +37,10 @@ Refer to the [Official Rules](terms.md)
 ## Submission for Competition
 
 Submissions for this contest will be done via X.com (aka Twitter)
+1. You must have an X.com account
+2. Submit a post on X.com
+    Included in the post must be:
+        1) A screenshot of your Terraform code output successfully deployment
+        2) A screenshot of your song lyrics that were generated 
+3. Use the #IntelGenAI as the hashtag in your x.com post
 
-
-**[Contest Submission](https://intelrockstar2023.s3.us-west-1.amazonaws.com/rockstars.html)**
