@@ -8,18 +8,30 @@ Intel AMX has been enabled by default.
 
 ## Instructions
 
-Run the Terraform Module [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat)
+Download and run the [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat) Terraform Module 
+
+```Shell
+terraform init
+terraform plan
+terraform apply
+```
 
 - The output of completed terraform module should look similar to this
+
 ![Successful output example](images/genai-aws-success.png)
 
-- After the module completes you will need to SSH to the public IP of the instance or use AWS Session Manager.
-- Run the following command to start FastChat
+- After the module completes you will need to SSH to the public IP of the instance to access the console.  The public IP is generated as part of the instance creation so access your aws console to find the public ip in the details tab of the instance.  The module will generate a private key in the folder where you ran the "terraform apply" command.
 
+Run the ssh command as below:
+```hcl
+ssh ubuntu@<Public_IP_Address_EC2_Instance> -i tfkey.private
+```
+* Note: If you get a permission denied message you may have to change the permissions of the tf.private file by using the command "CHMOD 400 tf.private" Then run step 5 again to connect.
+
+- Once you are logged into the EC2 instance, run the command
 ```Shell
 source /usr/local/bin/run_demo.sh
 ```
-
 If this is successful you will see the following output:
 
 ```shell
@@ -32,7 +44,8 @@ ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
 2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
 ```
 
-Open a browser and go to the public ip of yoru instance a browser.  http://public_ip:7860
+Open a browser and go to the public ip of your instance a browser.  
+http://public_ip:7860
 
 Once you get to the application, you will see a screen like this:
 
