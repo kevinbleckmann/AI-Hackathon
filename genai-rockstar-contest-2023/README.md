@@ -44,3 +44,4 @@ Submissions for this contest will be done via X.com (aka Twitter)
         2) A screenshot of your song lyrics that were generated 
 3. Use the #IntelGenAI as the hashtag in your x.com post
 
+![Generative AI Rockstar](images/Hashiconf.png)
