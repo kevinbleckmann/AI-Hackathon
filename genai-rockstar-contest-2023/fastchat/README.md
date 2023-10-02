@@ -8,9 +8,11 @@ Intel AMX has been enabled by default.
 
 ## Instructions
 
-You will run the Terraform Module [XXXXXXXXX] 
+Run the Terraform Module [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat)
 
-- Login to the VM using the provided credentials
+- Take a screenshot of the completed terraform module
+
+- After the module completes you will need to SSH to the public IP of the instance or use AWS Session Mangager.
 - Run the following command to start FastChat
 
 ```Shell
@@ -29,9 +31,7 @@ ubuntu@ip-172-31-33-45:~$ source /usr/local/bin/run_demo.sh
 2023-09-06 14:10:02 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
 ```
 
-Open a browser and go to the public URL listed. This URL is randomly generated each time the script is run. 
-
-**If you having trouble accessing the URL provided in the console, or the page is really slow to load, or you get errors while using FastChat, then try going to `http://public_ip:7860`.**
+Open a browser and go to the public ip of yoru instance a browser.  http://public_ip:7860
 
 Once you get to the application, you will see a screen like this:
 
@@ -41,7 +41,7 @@ You can now generate the lyrics for your song.
 
 ## Submitting Results
 
-For this portion of the challenge, you will need to copy the prompt you used, the text output and take a screenshot of either the UI or the output on the console. Put the lyrics in a text file and use the title of your song as the name of the file. Upload all of these as part of your submission. Examples are below. Don't finalize your submission until you've completed the second portion of the challenge.
+For this portion of the contest, you will need to screenshot the prompt you used, the text output and take a screenshot of either the UI or the output on the console. Examples are below. 
 
 **For the prompt and lyrics:**
 
