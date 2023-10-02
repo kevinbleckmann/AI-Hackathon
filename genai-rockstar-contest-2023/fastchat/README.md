@@ -10,9 +10,10 @@ Intel AMX has been enabled by default.
 
 Run the Terraform Module [gen-ai-fastchat](https://github.com/intel/terraform-intel-aws-vm/tree/main/examples/gen-ai-fastchat)
 
-- Take a screenshot of the completed terraform module
+- The output of completed terraform module should look similar to this
+![Successful output example](images/genai-aws-success.png)
 
-- After the module completes you will need to SSH to the public IP of the instance or use AWS Session Mangager.
+- After the module completes you will need to SSH to the public IP of the instance or use AWS Session Manager.
 - Run the following command to start FastChat
 
 ```Shell
@@ -41,7 +42,12 @@ You can now generate the lyrics for your song.
 
 ## Submitting Results
 
-For this portion of the contest, you will need to screenshot the prompt you used, the text output and take a screenshot of either the UI or the output on the console. Examples are below. 
+For this portion of the contest, you will need to submit 2 screenshots:
+1) A screenshot of the successful Terraform Run.
+Here is an example
+![Successful output example](images/genai-aws-success.png)
+
+2) A screenshot the prompt you used and take a screenshot of the prompt and lyrics. 
 
 **For the prompt and lyrics:**
 
